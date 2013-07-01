@@ -17,8 +17,12 @@
 		234B75DE1781175E006AF430 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 234B75DD1781175E006AF430 /* Default@2x.png */; };
 		234B75E01781175E006AF430 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 234B75DF1781175E006AF430 /* Default-568h@2x.png */; };
 		234B75E31781175E006AF430 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B75E21781175E006AF430 /* ViewController.m */; };
-		234B75E61781175E006AF430 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B75E41781175E006AF430 /* ViewController_iPhone.xib */; };
-		234B75E91781175E006AF430 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B75E71781175E006AF430 /* ViewController_iPad.xib */; };
+		234B75F2178117B6006AF430 /* YQAutoScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B75F1178117B6006AF430 /* YQAutoScroll.m */; };
+		234B75F517811C1E006AF430 /* ImgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B75F417811C1E006AF430 /* ImgModel.m */; };
+		234B75F817811C79006AF430 /* YQPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B75F717811C79006AF430 /* YQPageView.m */; };
+		234B7602178153F6006AF430 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 234B7601178153F6006AF430 /* image.png */; };
+		234B7604178153FC006AF430 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 234B7603178153FC006AF430 /* image3.png */; };
+		234B760617815407006AF430 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 234B760517815406006AF430 /* image2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +41,15 @@
 		234B75DF1781175E006AF430 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		234B75E11781175E006AF430 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		234B75E21781175E006AF430 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		234B75E51781175E006AF430 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		234B75E81781175E006AF430 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		234B75F0178117B6006AF430 /* YQAutoScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQAutoScroll.h; path = YQAutoScroll/YQAutoScroll.h; sourceTree = "<group>"; };
+		234B75F1178117B6006AF430 /* YQAutoScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQAutoScroll.m; path = YQAutoScroll/YQAutoScroll.m; sourceTree = "<group>"; };
+		234B75F317811C1E006AF430 /* ImgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgModel.h; path = YQAutoScroll/ImgModel.h; sourceTree = "<group>"; };
+		234B75F417811C1E006AF430 /* ImgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgModel.m; path = YQAutoScroll/ImgModel.m; sourceTree = "<group>"; };
+		234B75F617811C79006AF430 /* YQPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQPageView.h; path = YQAutoScroll/YQPageView.h; sourceTree = "<group>"; };
+		234B75F717811C79006AF430 /* YQPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQPageView.m; path = YQAutoScroll/YQPageView.m; sourceTree = "<group>"; };
+		234B7601178153F6006AF430 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		234B7603178153FC006AF430 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+		234B760517815406006AF430 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +96,14 @@
 		234B75CF1781175E006AF430 /* YQAutoScroll */ = {
 			isa = PBXGroup;
 			children = (
+				234B7601178153F6006AF430 /* image.png */,
+				234B760517815406006AF430 /* image2.png */,
+				234B7603178153FC006AF430 /* image3.png */,
+				234B75EF1781176B006AF430 /* YQAutoScroll */,
 				234B75D81781175E006AF430 /* AppDelegate.h */,
 				234B75D91781175E006AF430 /* AppDelegate.m */,
 				234B75E11781175E006AF430 /* ViewController.h */,
 				234B75E21781175E006AF430 /* ViewController.m */,
-				234B75E41781175E006AF430 /* ViewController_iPhone.xib */,
-				234B75E71781175E006AF430 /* ViewController_iPad.xib */,
 				234B75D01781175E006AF430 /* Supporting Files */,
 			);
 			path = YQAutoScroll;
@@ -108,6 +121,19 @@
 				234B75DF1781175E006AF430 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		234B75EF1781176B006AF430 /* YQAutoScroll */ = {
+			isa = PBXGroup;
+			children = (
+				234B75F0178117B6006AF430 /* YQAutoScroll.h */,
+				234B75F1178117B6006AF430 /* YQAutoScroll.m */,
+				234B75F317811C1E006AF430 /* ImgModel.h */,
+				234B75F417811C1E006AF430 /* ImgModel.m */,
+				234B75F617811C79006AF430 /* YQPageView.h */,
+				234B75F717811C79006AF430 /* YQPageView.m */,
+			);
+			name = YQAutoScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +191,9 @@
 				234B75DC1781175E006AF430 /* Default.png in Resources */,
 				234B75DE1781175E006AF430 /* Default@2x.png in Resources */,
 				234B75E01781175E006AF430 /* Default-568h@2x.png in Resources */,
-				234B75E61781175E006AF430 /* ViewController_iPhone.xib in Resources */,
-				234B75E91781175E006AF430 /* ViewController_iPad.xib in Resources */,
+				234B7602178153F6006AF430 /* image.png in Resources */,
+				234B7604178153FC006AF430 /* image3.png in Resources */,
+				234B760617815407006AF430 /* image2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +207,9 @@
 				234B75D61781175E006AF430 /* main.m in Sources */,
 				234B75DA1781175E006AF430 /* AppDelegate.m in Sources */,
 				234B75E31781175E006AF430 /* ViewController.m in Sources */,
+				234B75F2178117B6006AF430 /* YQAutoScroll.m in Sources */,
+				234B75F517811C1E006AF430 /* ImgModel.m in Sources */,
+				234B75F817811C79006AF430 /* YQPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,22 +222,6 @@
 				234B75D31781175E006AF430 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		234B75E41781175E006AF430 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				234B75E51781175E006AF430 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		234B75E71781175E006AF430 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				234B75E81781175E006AF430 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
