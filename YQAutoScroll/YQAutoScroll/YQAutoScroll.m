@@ -55,7 +55,7 @@
         scrollView.delegate = self;
         scrollView.userInteractionEnabled = YES;
         
-        CGSize newSize = CGSizeMake(width * pageNumber,  scrollView.frame.size.height);//设置scrollview的大小
+        CGSize newSize = CGSizeMake(width * pageNumber,  scrollView.frame.size.height);
         [scrollView setContentSize:newSize];
         
         [self addSubview:scrollView];
@@ -66,7 +66,7 @@
         [pageControl sizeToFit];
         
         [pageControl setCenter:CGPointMake(frame.size.width/2.0, frame.size.height - 20)];
-        [self  addSubview:pageControl];
+        [self addSubview:pageControl];
         
         imgArray = pages;
         
@@ -80,7 +80,7 @@
             [scrollView addSubview:view];
         }];
         
-        timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(changeView) userInfo:nil repeats:YES];
+        timer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(changeView) userInfo:nil repeats:YES];
         
     }
     return self;    
@@ -88,8 +88,6 @@
 
 -(void)changeView
 {
-    
-    
     if(currentPage == 0)
         direction = rightDirection;
     else if (currentPage == pageNumber - 1)
@@ -113,12 +111,14 @@
 }
 
 - (void) scrollViewDidEndDecelerating:(UIScrollView *)scroll {
-//    
-    currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
-    NSLog(@"currentPage %d", currentPage);
-    
-    [self changeView];
 
+    currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    
+#ifdef DEBUG
+    NSLog(@"currentPage %d", currentPage);
+#endif
+    
+    pageControl.currentPage = currentPage;
 }
 
 #pragma mark YQPageViewDelegate

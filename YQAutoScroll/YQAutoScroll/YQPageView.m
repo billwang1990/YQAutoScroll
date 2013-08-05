@@ -39,6 +39,7 @@
     return self;
 }
 
+//tap respond method
 -(void)tapPic
 {
     [self.delegate clickView:self.tag];

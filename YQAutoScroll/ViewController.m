@@ -42,7 +42,6 @@
     
     [self.view addSubview:self.YQScroll];
 
-    
 }
 
 - (void)didReceiveMemoryWarning

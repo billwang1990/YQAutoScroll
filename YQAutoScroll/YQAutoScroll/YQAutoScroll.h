@@ -31,7 +31,6 @@ typedef enum {
     int currentPage;
 }
 
-
 @property (nonatomic) NSMutableArray *images;
 @property (nonatomic, weak) id<YQAutoScrollDelegate> delegate;
 
